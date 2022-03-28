@@ -363,7 +363,7 @@
     max-height: 200px;
     margin: auto;
     max-width: 250px;
-    object-fit: cover;
+    object-fit:contain;
     padding: .8rem;
 }
 

@@ -7,7 +7,7 @@ export const SearchInput = () =>{
         setSearch(e.target.value)
         
     }
-    const enter = (e) => e.key === "Enter" && (window.location.href=`/#/products?${search}`)
+    const enter = (e) => e.key === "Enter" && (window.location.href=`./#/products?${search}`)
     return (
         <div className='input-div'>
                 <input 
