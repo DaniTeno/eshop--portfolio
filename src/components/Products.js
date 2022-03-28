@@ -53,14 +53,17 @@ export const Products = ({addToCart}) => {
                         />
                     )}
                 </Routes>
-                {search.includes('?') && 
-                    queryItem.map(item => 
+                {search.includes('?') && (queryItem.length > 0 
+                    ? queryItem.map(item => 
                         <ProductItem 
                             key={`${item.name}`} 
                             data={item} 
                             addToCart={addToCart} 
                             classStyle="listed"
                         />)
+                    : <p style={{color: "#eee", fontSize: "1.6rem"}}>
+                        Theres no matching items to: <i style={{color: "#eee", fontSize: "1.6rem", textDecoration: "underline"}}>{search.slice(1)}</i>
+                    </p>)
                 }
                 {(path === '/products' && !search) && <p style={{color: "#eee", fontSize: "1.6rem"}}>Select a category</p>}
             </nav>
