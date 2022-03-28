@@ -1,0 +1,6 @@
+export const SHOP_TYPES = {
+    ADD_TO_CART : "ADD_TO_CART",
+    REMOVE_1 : "REMOVE_1",
+    REMOVE_ALL_TYPES : "REMOVE_ALL_TYPES",
+    CLEAR_CART: "CLEAR_CART"
+}
